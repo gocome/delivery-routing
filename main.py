@@ -37,7 +37,6 @@ def print_solution(data, manager, routing, solution):
             route_load += data["demands"][node_index]
             node_index_list.append(node_index)
             route_load_list.append(route_load)
-            # plan_output += f" {node_index} Load({route_load}) -> "
             previous_index = index
             index = solution.Value(routing.NextVar(index))
             route_distance += routing.GetArcCostForVehicle(previous_index, index, vehicle_id)
