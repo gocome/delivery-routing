@@ -36,7 +36,13 @@ Total distance of all routes: 215
 Total load of all routes: 190
 ```
 
+There are two routes reported, one for each truck. 
+The first truck deliver a total demand of 92 to 10 locations, while the second truck deliver a total demand of 98 to the rest 10 locations. So, the maximum load of each truck did not exceed its capacity limit of 100.
+The traveling distances of two routes are 106 and 109, respectively, giving rise to a total distance of 215 (which is also the objective value that the algorithm found).
+
 ### Discussions
 1. The input data to the program shall be provided in the file `cvrp_problem_data.json`, which is located under the subfolder `data`.
 2. We additionally assume that each truck services at most one route in the algorithm.
-3. To have a feasible solution, the total capacity of all trucks shall be no less than the total demands of all the delivery locations.
+3. To have a feasible solution, the total capacity of all trucks shall not be less than the total demands of all the delivery locations.
+4. The algorithm used meta-heuristic to search for routes, so the optimal routes are not guaranteed to be found. However, it has been shown that the solution is within 1% of the optimum for a problem instance of large size (https://en.wikipedia.org/wiki/Vehicle_routing_problem).
+5. The current code can easily adapt to the more general case in which trucks have different capacities.
