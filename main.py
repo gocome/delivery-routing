@@ -28,7 +28,7 @@ def print_solution(data, manager, routing, solution):
         if not routing.IsVehicleUsed(solution, vehicle_id):
             continue
         index = routing.Start(vehicle_id)
-        plan_output = f"Route for vehicle {vehicle_id}:\n"
+        plan_output = f"Route for truck {vehicle_id}:\n"
         route_distance = 0
         route_load = 0
         node_index_list, route_load_list = [], []
