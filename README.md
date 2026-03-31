@@ -1,4 +1,4 @@
-# delivery-routing
+# Delivery Routing
 Find the shortest total distance of routes to deliver demands. 
 It is a well-studied Capacitated Vehicle Routing Problem (CVRP).
 
@@ -62,3 +62,4 @@ The traveling distances of two routes are 106 and 109, respectively, giving rise
 5. The algorithm used meta-heuristic to search for routes, so the optimal routes are not guaranteed to be found. However, it has been shown that the solution is within 1% of the optimum for a problem instance of large size (https://en.wikipedia.org/wiki/Vehicle_routing_problem).
 6. The current code can easily adapt to the more general case in which there are more than two trucks and/or trucks have different capacities.
 7. The CVRP generalises the Vehicle Routing Problem (VRP), which further generalises the Travelling Salesperson Problem (TSP). Therefore, the CVRP is computationally intractable.
+8. The presentation file `Delivery_Routing.pdf` can be found under the subfolder `docs`.
