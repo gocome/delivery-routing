@@ -13,7 +13,7 @@ Both trucks have the same load capacity limit of 100.
 The objective of this problem is to find two routes, one for each truck, such that
 - the total traveling distance of two routes is as short as possible,
 - each route shall start from the depot and end at the depot as well,
-- every customer locations shall be visited in order to deliver the command, and
+- every customer's location shall be visited in order to deliver the command, and
 - each truck's load must not exceed its capacity limit at any time of delivery.
 
 ### How to run code

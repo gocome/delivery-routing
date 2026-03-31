@@ -15,7 +15,7 @@ def create_data_model(data_file='./data/cvrp_problem_data.json'):
             "demands": json_data["demands"],
             "vehicle_capacities": [json_data["vehicles"]["capacity_per_vehicle"]] * json_data["vehicles"]["count"],
             "num_vehicles": json_data["vehicles"]["count"],
-            "depot": 0}
+            "depot": json_data["nodes"]["depot"]}
     return data
 
 
