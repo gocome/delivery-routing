@@ -55,7 +55,7 @@ The first truck delivers a total demand of 92 to 10 locations, while the second 
 The traveling distances of two routes are 106 and 109, respectively, giving rise to a total distance of 215 (which is also the objective value that the algorithm found).
 
 ### Discussions
-1. Code was basically modified from https://developers.google.com/optimization/routing/cvrp.
+1. Code was basically modified from https://developers.google.com/optimization/routing/cvrp, which solved the problem by the routing model of Google OR-Tools.
 2. The input data to the program shall be provided in the file `cvrp_problem_data.json`, which is located under the subfolder `data`.
 3. We additionally assume that each truck services at most one route in the algorithm.
 4. To have a feasible solution, the total capacity of all trucks shall not be less than the total demands of all the delivery locations.
